@@ -26,4 +26,8 @@ public class PackageService {
 
         return foundPackage;
     }
+
+    public Package registerPackage(Package newPackage) {
+        return packageRepository.save(newPackage);
+    }
 }
